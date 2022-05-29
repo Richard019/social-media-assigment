@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&family=Roboto:wght@700&display=swap');
+
+body {
+    color: #a8a8b3;
+    font-family: 'Roboto', sans-serif, Arial, Helvetica;
+}
+
+.container {
+    height: 100vh;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2a69bb;
+}
+
+.auto-login-left {text-align: center;}
+
+.auto-login-left h1 {
+    font-size: max(40px, 5vw);
+    color: white;
+    font-weight: 700;
+}
+
+.auto-login-left img {max-width: 400px;}
+
+.auto-login-right {width: 70%;}
+
+.has-logged-btn {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: block;
+    text-decoration: none;
+    background-color: rgba(192, 192, 192, 0.877);
+    box-shadow: 0px 3px 15px rgba(85, 84, 84, 0.397);
+    border: 1px solid #194681;
+    transition: all 0.4s;
+}
+
+.has-logged-btn:hover {transform: scale(1.04);}
+
+.has-logged-btn img {
+    height: 45px;
+    width: 45px;
+    border-radius: 25%;
+}
+
+.auto-login-form {
+    width: 25vw;
+    min-width: 300px;
+    padding:  15px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(29, 29, 29, 0.938);
+}
+
+.form-btn-submit {
+    letter-spacing: 2px; 
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    background-color: #194681;
+    box-shadow: 2px 3px 10px #194681;
+    transition: all 0.3s;
+}
+
+.form-btn-submit:hover {background-color: #2a69bb;}
+
+.auto-login-form input {
+    width: 100%;
+    margin-bottom: 15px;
+    font: 1rem sans-serif;
+    padding: 10px;
+    display: block;
+}
+
+@media (max-width: 650px){
+    
+    .container {
+        flex-direction: column;
+    }
+
+    .auto-login-right {
+        width: auto;
+    }
+
+    .auto-login-left img {
+        display: none;
+    }
+}
